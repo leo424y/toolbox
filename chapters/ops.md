@@ -4,22 +4,22 @@ Ops
 Nginx Pagespeed
 ---
 
-> ngx_pagespeed 是 Nginx 的一个扩展模块，主要的功能是针对前端页面而进行服务器端的优化，对前端设计人员来说，可以省去优化css、js以及图片的过程。ngx_pagespeed对nginx自身负载能力的提升基本是看不到的，甚至会因为进行服务器端的优化而使系统增加负载；但从减少客户请求数的角度去看，牺牲部分服务器性能还是值得的
+> ngx_pagespeed 是 Nginx 的一個擴充套件模組，主要的功能是針對前端頁面而進行伺服器端的優化，對前端設計人員來說，可以省去優化css、js以及圖片的過程。ngx_pagespeed對nginx自身負載能力的提升基本是看不到的，甚至會因為進行伺服器端的優化而使系統增加負載；但從減少客戶請求數的角度去看，犧牲部分伺服器效能還是值得的
 
 主要功能如下：
 
- - 图像优化：剥离元数据、动态调整，重新压缩
- - CSS和JavaScript压缩、合并、级联、内联
- - 小资源内联
- - 推迟图像和JavaScript加载
- - 对HTML重写、压缩空格、去除注释等
- - 提升缓存周期
+ - 影象優化：剝離後設資料、動態調整，重新壓縮
+ - CSS和JavaScript壓縮、合併、級聯、內聯
+ - 小資源內聯
+ - 推遲影象和JavaScript載入
+ - 對HTML重寫、壓縮空格、去除註釋等
+ - 提升快取週期
  - 以及其他config_filters
 
 Boom
 ---
 
-Boom是一个用Go语言实现的压力测试工具，就是和Apache Bench类似的工具。它提供了一个很有意思的UI，这就是我为什么推荐他的原因了：
+Boom是一個用Go語言實現的壓力測試工具，就是和Apache Bench類似的工具。它提供了一個很有意思的UI，這就是我為什麼推薦他的原因了：
 
 ```
 1000 / 1000 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00 %
@@ -57,21 +57,21 @@ Latency distribution:
   90% in 0.2011 secs.
   95% in 0.2024 secs.
   99% in 0.2038 secs.
-```  
+```
 
 GoAccess
 ---
 
-> GoAccess是一款开源、实时，运行在命令行终端下的web日志分析工具。该工具提供快速、多样的HTTP状态统计，可以令管理员不再纠结于统计各类数据，和繁杂的指令以及一大堆管道/正则表达式说byebye。
+> GoAccess是一款開源、實時，執行在命令列終端下的web日誌分析工具。該工具提供快速、多樣的HTTP狀態統計，可以令管理員不再糾結於統計各類資料，和繁雜的指令以及一大堆管道/正規表示式說byebye。
 
-这生成的风格是这样的：
+這生成的風格是這樣的：
 
 ![GoAccess](http://toolbox.phodal.com/images/ops/goaccess-dashboard.png)
 
 
-它可以轻松统计出访问概况、动态页面请求、静态页面请求（如图片、样式表、脚本等）、访客排名，访客使用的操作系统，访客使用的浏览器，来路域名，404 错误，搜索爬虫，搜索关键词等等。
+它可以輕鬆統計出訪問概況、動態頁面請求、靜態頁面請求（如圖片、樣式表、指令碼等）、訪客排名，訪客使用的作業系統，訪客使用的瀏覽器，來路域名，404 錯誤，搜尋爬蟲，搜尋關鍵詞等等。
 
-而，我们所要做的只需要运行：
+而，我們所要做的只需要執行：
 
 ```shell
 goaccess -f access.log
@@ -80,25 +80,24 @@ goaccess -f access.log
 Fabric
 ---
 
-因为我的博客是基于Django框架而开发的，我偏向于使用Python作为开发语言，所以我需要选择了Fabric作为运维工具。
+因為我的部落格是基於Django框架而開發的，我偏向於使用Python作為開發語言，所以我需要選擇了Fabric作為運維工具。
 
 
-> Fabric 是一个 Python (2.5-2.7) 库和命令行工具，用来流水线化执行 SSH以部署应用或系统管理任务。
+> Fabric 是一個 Python (2.5-2.7) 庫和命令列工具，用來流水線化執行 SSH以部署應用或系統管理任務。
 
-更具体地说，Fabric 是：
+更具體地說，Fabric 是：
 
- - 一个让你通过 命令行 执行 任意 Python 函数 的工具；
- - 一个让通过 SSH 执行 Shell 命令更加 容易 和 蟒样 的子程序库（建立于一个更低层次的库）。
+ - 一個讓你通過 命令列 執行 任意 Python 函數 的工具；
+ - 一個讓通過 SSH 執行 Shell 命令更加 容易 和 蟒樣 的子程式庫（建立於一個更低層次的庫）。
 
 Docker
 ---
 
-> Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。
+> Docker是一個開源的引擎，可以輕鬆的為任何應用建立一個輕量級的、可移植的、自給自足的容器。
 
 Jenkins
 ---
 
-> Jenkins是一个用Java编写的开源的持续集成工具。Jenkins提供了软件开发的持续集成服务。它运行在Servlet容器中（例如Apache Tomcat）。它支持软件配置管理（SCM）工具，可以执行基于Apache Ant和Apache Maven的项目，以及任意的Shell脚本和Windows批处理命令。
+> Jenkins是一個用Java編寫的開源的持續整合工具。Jenkins提供了軟體開發的持續整合服務。它執行在Servlet容器中（例如Apache Tomcat）。它支援軟體配置管理（SCM）工具，可以執行基於Apache Ant和Apache Maven的項目，以及任意的Shell指令碼和Windows批處理命令。
 
-除了将Jenkins有于持续集成环境外，我们还可以使用Jenkins来完成一些自动化的部署工作。
-
+除了將Jenkins有於持續整合環境外，我們還可以使用Jenkins來完成一些自動化的部署工作。

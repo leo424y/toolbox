@@ -1,7 +1,7 @@
-自动化
+自動化
 ===
 
 Selenium
 ---
 
-> Selenium 是一个用于 Web 应用程序测试的工具。Selenium 的测试用例直接运行在浏览器中，就像真正的用户在操作一样。与主流的 web 自动化测试框架还有 QTP，基于 Ruby 的 WATIR 等相比，Selenium 支持 IE、Mozilla Firefox 多种浏览器，支持自动录制脚本以及 Java、c#、ruby 等多种运行语言的自动生成，用例制作快捷，运行快速。相比起来 Selenium 要显得更为灵活实用。
+> Selenium 是一個用於 Web 應用程式測試的工具。Selenium 的測試用例直接執行在瀏覽器中，就像真正的使用者在操作一樣。與主流的 web 自動化測試框架還有 QTP，基於 Ruby 的 WATIR 等相比，Selenium 支援 IE、Mozilla Firefox 多種瀏覽器，支援自動錄製指令碼以及 Java、c#、ruby 等多種執行語言的自動生成，用例製作快捷，執行快速。相比起來 Selenium 要顯得更為靈活實用。
