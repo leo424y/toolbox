@@ -13,4 +13,4 @@ Moco
 Swagger
 ---
 
-> Swagger是一種和語言無關的規範和框架，用於定義服務介面，主要用於描述RESTful的API。它專注於為API建立優秀的文件和客戶端庫。支援Swagger的API可以為API方法生成互動式的文件，讓使用者可以通過以視覺化的方式試驗，檢視請求和響應、標頭檔案和返回程式碼，從而發現API的功能。它本身就非常強大，但是Swagger框架還支援為多種流行的語言——包括JavaScript、Python、Ruby、Java、Scala等等——生成客戶端程式碼	。
+> Swagger是一種和語言無關的規範和框架，用於定義服務介面，主要用於描述RESTful的API。它專注於為API建立優秀的檔案和客戶端庫。支援Swagger的API可以為API方法生成互動式的檔案，讓使用者可以通過以視覺化的方式試驗，檢視請求和響應、標頭檔案和返回程式碼，從而發現API的功能。它本身就非常強大，但是Swagger框架還支援為多種流行的語言——包括JavaScript、Python、Ruby、Java、Scala等等——生成客戶端程式碼	。

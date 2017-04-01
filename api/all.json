@@ -5,31 +5,31 @@
         	"path": "chapters/api.md"
         },
         {
-        	"title": "后台篇",
+        	"title": "後臺篇",
         	"path": "chapters/backend.md"
         },
         {
-        	"title": "Chrome插件篇",
+        	"title": "Chrome外掛篇",
         	"path": "chapters/chrome-plugins.md"
         },
         {
-        	"title": "命令行工具篇",
+        	"title": "命令列工具篇",
         	"path": "chapters/cli.md"
         },
         {
-        	"title": "外设篇",
+        	"title": "外設篇",
         	"path": "chapters/devices.md"
         },
         {
-        	"title": "文档篇",
+        	"title": "文件篇",
         	"path": "chapters/documents.md"
         },
         {
-        	"title": "图形工具篇",
+        	"title": "圖形工具篇",
         	"path": "chapters/graphics.md"
         },
         {
-        	"title": "硬件篇",
+        	"title": "硬體篇",
         	"path": "chapters/hardware.md"
         },
         {
@@ -37,7 +37,7 @@
         	"path": "chapters/ops.md"
         },
         {
-        	"title": "科学工具篇",
+        	"title": "科學工具篇",
         	"path": "chapters/science.md"
         }
     ],

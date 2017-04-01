@@ -1,5 +1,5 @@
 
-文档篇
+文件篇
 ===
 
 ![Documents](http://toolbox.phodal.com/images/documents/documents.png)
@@ -7,19 +7,19 @@
 Pandoc
 ---
 
-> Pandoc是一个标记语言转换工具，可实现不同标记语言间的格式转换，堪称该领域中的“瑞士军刀”。
+> Pandoc是一個標記語言轉換工具，可實現不同標記語言間的格式轉換，堪稱該領域中的“瑞士軍刀”。
 
-可以将 markdown、 reStructuredText、 textile、 HTML、 DocBook、 LaTeX、 MediaWiki markup、 TWiki markup、 OPML、 Emacs Org-Mode、 Txt2Tags、 Microsoft Word docx、 LibreOffice ODT、 EPUB、 Haddock markup
+可以將 markdown、 reStructuredText、 textile、 HTML、 DocBook、 LaTeX、 MediaWiki markup、 TWiki markup、 OPML、 Emacs Org-Mode、 Txt2Tags、 Microsoft Word docx、 LibreOffice ODT、 EPUB、 Haddock markup
 
-转化为
+轉化為
 
-XHTML、 HTML5、 以及HTML幻灯片Slidy， S5，或者DZSlides、Microsoft Word docx、 OpenOffice/LibreOffice ODT、 OpenDocument XML、EPUB、DocBook、 GNU TexInfo、 Groff man pages、LaTeX、 ConTeXt、 LaTeX Beamer slides、PDF via LaTeX、Markdown、 reStructuredText、 AsciiDoc、 MediaWiki markup、 Emacs Org-Mode、 Textile
+XHTML、 HTML5、 以及HTML幻燈片Slidy， S5，或者DZSlides、Microsoft Word docx、 OpenOffice/LibreOffice ODT、 OpenDocument XML、EPUB、DocBook、 GNU TexInfo、 Groff man pages、LaTeX、 ConTeXt、 LaTeX Beamer slides、PDF via LaTeX、Markdown、 reStructuredText、 AsciiDoc、 MediaWiki markup、 Emacs Org-Mode、 Textile
 
-上图
+上圖
 
 ![Pandoc](http://toolbox.phodal.com/images/documents/pandoc.png)
 
-我最常用的就是：将md转化为workd及pdf。我的毕业论文及之前的几本电子书都是这么做的，它是一个命令行工具，安装方式：
+我最常用的就是：將md轉化為workd及pdf。我的畢業論文及之前的幾本電子書都是這麼做的，它是一個命令列工具，安裝方式：
 
  - Windows: choco install pandoc
  - Ubuntu/CentOS/OpenSUSE: apt-get intall pandoc 或者 yum install pandoc
@@ -29,279 +29,279 @@ XHTML、 HTML5、 以及HTML幻灯片Slidy， S5，或者DZSlides、Microsoft Wo
 
       pandoc fullstack.md -o fullstack.docx
 
-如果要转为PDF，则需要另外的一个工具——LaTeX
+如果要轉為PDF，則需要另外的一個工具——LaTeX
 
 Graphviz
 ---
 
-> Graphviz （英文：Graph Visualization Software的缩写）是一个由AT&T实验室启动的开源工具包，用于绘制DOT语言脚本描述的图形。它也提供了供其它软件使用的库。
+> Graphviz （英文：Graph Visualization Software的縮寫）是一個由AT&T實驗室啟動的開源工具包，用於繪製DOT語言指令碼描述的圖形。它也提供了供其它軟體使用的庫。
 
-简单的来说，就是将代码转换为图形:
+簡單的來說，就是將程式碼轉換為圖形:
 
 ![Graphviz](http://toolbox.phodal.com/images/documents/graphviz-example.png)
 
-它让我最惊讶的是DOT语言，简直是以我们平时的用法来定义的。上面的图形的代码类似于这样的：
+它讓我最驚訝的是DOT語言，簡直是以我們平時的用法來定義的。上面的圖形的程式碼類似於這樣的：
 
     home->products->widgets
 
-又是一个让人惊呆的黑科技，这才是人类应该使用的语言。它可以支持PostScript，PDF，SVG，PNG等一系列的格式，用法
+又是一個讓人驚呆的黑科技，這才是人類應該使用的語言。它可以支援PostScript，PDF，SVG，PNG等一系列的格式，用法
 
      dot -T png phodal.dot -o phodal.png
 
-简单、粗暴到没有朋友。
+簡單、粗暴到沒有朋友。
 
 ImageMagick
 ---
 
-> ImageMagick (TM) 是一个免费的创建、编辑、合成图片的软件。它可以读取、转换、写入多种格式的图片。图片切割、颜色替换、各种效果的应用，图片的旋转、组合，文本，直线，多边形，椭圆，曲线，附加到图片伸展旋转。
+> ImageMagick (TM) 是一個免費的建立、編輯、合成圖片的軟體。它可以讀取、轉換、寫入多種格式的圖片。圖片切割、顏色替換、各種效果的應用，圖片的旋轉、組合，文字，直線，多邊形，橢圓，曲線，附加到圖片伸展旋轉。
 
-来自重点：可以支持超过两百多种格式。It can read and write images in a variety of formats (over 200) including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG.
+來自重點：可以支援超過兩百多種格式。It can read and write images in a variety of formats (over 200) including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG.
 
-它提供了一个命令行工具叫：``convert``，这可以自由地转换图片的形式，如：
+它提供了一個命令列工具叫：``convert``，這可以自由地轉換圖片的形式，如：
 
     convert image.jpg image.png
 
-还可以加各种效果，如：
+還可以加各種效果，如：
 
 ![ImageMagick](http://toolbox.phodal.com/images/documents/gausisan.jpg)
 
-顺便做个介绍：上面的这个人叫瑞典模特儿莱娜·瑟德贝里，是在刊于1972年11月号《花花公子》杂志上的一张裸体插图照片的一部分。**她的脸部与裸露的肩部已经变成了事实上的工业标准。**
+順便做個介紹：上面的這個人叫瑞典模特兒萊娜·瑟德貝里，是在刊於1972年11月號《花花公子》雜誌上的一張裸體插圖照片的一部分。**她的臉部與裸露的肩部已經變成了事實上的工業標準。**
 
-又是一个简单、粗暴到没有朋友的工具。
+又是一個簡單、粗暴到沒有朋友的工具。
 
 TeX 和 Latex
 ---
 
-TeX是由是一个由美国计算机教授高德纳（Donald Ervin Knuth）编写的功能强大的排版软件。顺便推荐一下他写的一本书：《计算机程序设计艺术》。因为：
+TeX是由是一個由美國計算機教授高德納（Donald Ervin Knuth）編寫的功能強大的排版軟體。順便推薦一下他寫的一本書：《計算機程式設計藝術》。因為：
 
-> 高德纳最早开始自行编写TEX的原因是当时十分粗糙的排版水平已经影响到他的巨著《计算机程序设计艺术》的印刷质量。他以典型的黑客思维模式，最终决定自行编写一个排版软件：TEX。他原本以为他只需要半年时间，在1978年下半年就能完成，但最终他用了超过十年时间，直到1989年TEX才最终停止修改。
+> 高德納最早開始自行編寫TEX的原因是當時十分粗糙的排版水平已經影響到他的鉅著《計算機程式設計藝術》的印刷質量。他以典型的黑客思維模式，最終決定自行編寫一個排版軟體：TEX。他原本以為他只需要半年時間，在1978年下半年就能完成，但最終他用了超過十年時間，直到1989年TEX才最終停止修改。
 
-这直接让我想起Martin Fowler在写《领域特定语言》里好像也是用DSL。Tex的最大优点是可以写出下面的这本复杂的公式：
+這直接讓我想起Martin Fowler在寫《領域特定語言》裡好像也是用DSL。Tex的最大優點是可以寫出下面的這本複雜的公式：
 
 ![formular](http://toolbox.phodal.com/images/documents/formular.jpg)
 
-LaTeX 建立在 TeX 之上的工具，它在TeX的基础上大大改善了易用性。对了，如果只是一般的用途的话，就没有必要拿去装逼了~。
+LaTeX 建立在 TeX 之上的工具，它在TeX的基礎上大大改善了易用性。對了，如果只是一般的用途的話，就沒有必要拿去裝逼了~。
 
-它也是工作于命令行上的工具。
+它也是工作於命令列上的工具。
 
 Jupyter Notebook
 ---
 
-Jupyter Notebook使用浏览器作为界面，其前身是Ipython Notebook，Ipython3.0之后新建为Jupyter项目。它支持Markdown、Python语言交互、R语言交互、图形显示、运行时间分析、LaTex公式，对于交互编程、数据分析和数据可视化非常有用。
+Jupyter Notebook使用瀏覽器作為介面，其前身是Ipython Notebook，Ipython3.0之後新建為Jupyter項目。它支援Markdown、Python語言互動、R語言互動、圖形顯示、執行時間分析、LaTex公式，對於互動程式設計、資料分析和資料視覺化非常有用。
 
 ![Jupyter](http://toolbox.phodal.com/images/documents/Jupyter.png)
 
-**安装（使用pip）**
+**安裝（使用pip）**
 
     $ pip install jupyter
 
-**运行**
+**執行**
 
     $ jupyter notebook
 
-官网：[Jupyter](https://jupyter.org/)
+官網：[Jupyter](https://jupyter.org/)
 
 
 Gitbook
 ---
 
-Gitbook是一个命令行工具(node.js库)，可以把你的Markdown文件汇集成起来，生成一个静态网站，也可以输出为PDF等多种格式。
+Gitbook是一個命令列工具(node.js庫)，可以把你的Markdown檔案彙整合起來，生成一個靜態網站，也可以輸出為PDF等多種格式。
 
 ![gitbook](http://toolbox.phodal.com/images/documents/gitbook.jpg)
 
-**安装（使用npm）**
+**安裝（使用npm）**
 
     $ npm install gitbook-cli -g
 
 **使用**
 
-    $ gitbook init ＃ 初始化书籍目录
-    $ gitbook serve ＃ 运行
+    $ gitbook init ＃ 初始化書籍目錄
+    $ gitbook serve ＃ 執行
 
-官网：[Gitbook](https://www.gitbook.com/)
+官網：[Gitbook](https://www.gitbook.com/)
 
-图形工具篇
+圖形工具篇
 ===
 
-在上一篇《全栈工程师的百宝箱：黑魔法之文档篇》我们介绍了一些文档工具，今天让我来分享一下，我常用的一些图形工具。
+在上一篇《全棧工程師的百寶箱：黑魔法之文件篇》我們介紹了一些文件工具，今天讓我來分享一下，我常用的一些圖形工具。
 
-## 流程图：Graphviz
+## 流程圖：Graphviz
 
-说到流程图还是再次提及一下，我们之前说到的**Graphviz** 。
+說到流程圖還是再次提及一下，我們之前說到的**Graphviz** 。
 
-> Graphviz （英文：Graph Visualization Software的缩写）是一个由AT&T实验室启动的开源工具包，用于绘制DOT语言脚本描述的图形。它也提供了供其它软件使用的库。
+> Graphviz （英文：Graph Visualization Software的縮寫）是一個由AT&T實驗室啟動的開源工具包，用於繪製DOT語言指令碼描述的圖形。它也提供了供其它軟體使用的庫。
 
-它的主要特点是代码生成图像，并且足够的简单。
+它的主要特點是程式碼生成影象，並且足夠的簡單。
 
-在我的那个“Web Developer 成长路线图”(GitHub: [https://github.com/phodal/developer](https://github.com/phodal/developer))里，就是用这个工具生成下面这个复杂的图形。
+在我的那個“Web Developer 成長路線圖”(GitHub: [https://github.com/phodal/developer](https://github.com/phodal/developer))裡，就是用這個工具生成下面這個複雜的圖形。
 
 ![tree.png](http://toolbox.phodal.com/images/graphics/tree.png)
 
-而其代码特别简单——和我们平时表达的手法是一样的，即：
+而其程式碼特別簡單——和我們平時表達的手法是一樣的，即：
 
 ```
-"包管理" -> "包发布" -> "自动部署"
+"包管理" -> "包釋出" -> "自動部署"
 "CLI" -> "部署"
-"脚本语言(Bash,Perl,Ruby,Python etc)" -> "部署"
-"脚本语言(Bash,Perl,Ruby,Python etc)" -> "构建"
-"*nix" -> "软件编译" -> "部署"
-"构建" -> "软件编译"
+"指令碼語言(Bash,Perl,Ruby,Python etc)" -> "部署"
+"指令碼語言(Bash,Perl,Ruby,Python etc)" -> "構建"
+"*nix" -> "軟體編譯" -> "部署"
+"構建" -> "軟體編譯"
 ```
 
- Graphviz有一个大的优点和弱点是：自动生成，导致画线的时候很出现出问题。接着，我们就来看看手动画线的例子。
+ Graphviz有一個大的優點和弱點是：自動生成，導致畫線的時候很出現出問題。接著，我們就來看看手動畫線的例子。
 
-## 流程图： Visio vs Dia vs OmnIGraffle
+## 流程圖： Visio vs Dia vs OmnIGraffle
 
-在Windows世界里，在这一类的工具里面最常见的算是Visio:
+在Windows世界裡，在這一類的工具裡面最常見的算是Visio:
 
 ![MS-Visio-flowchart.png](http://toolbox.phodal.com/images/graphics/visio.png)
 
-遗憾的是，它并不支持在Mac OS上使用。而且，它并不在我购买的Office 365套装里。
+遺憾的是，它並不支援在Mac OS上使用。而且，它並不在我購買的Office 365套裝裡。
 
-在Mac世界里，最好的工具算是OmniGraffle，就是很贵——我们平时使用的是公司的Mac电脑，使用盗版软件是有法律风险的。
+在Mac世界裡，最好的工具算是OmniGraffle，就是很貴——我們平時使用的是公司的Mac電腦，使用盜版軟體是有法律風險的。
 
 ![Omnigrafflescreen.jpg](http://toolbox.phodal.com/images/graphics/omnigraffle.jpg)
 
 
-在GNU/Linux世界里，我们使用Dia。
+在GNU/Linux世界裡，我們使用Dia。
 
-> Dia 是开放源代码的流程图软件，是GNU计划的一部分，程序创立者是Alexander Larsson。Dia使用单一文件界面模式，类似于GIMP与Inkscape。 Dia将多种需求以模块化来设计，如流程图、网络图、电路图等。各模块之间的符号仍是可以通用的，并没有限制。
+> Dia 是開放原始碼的流程圖軟體，是GNU計劃的一部分，程式創立者是Alexander Larsson。Dia使用單一檔案介面模式，類似於GIMP與Inkscape。 Dia將多種需求以模組化來設計，如流程圖、網路圖、電路圖等。各模組之間的符號仍是可以通用的，並沒有限制。
 
 ![dia_screenshot.png](http://toolbox.phodal.com/images/graphics/dia_screenshot.png)
 
-顺便安利一下，我最喜欢的操作系统OpenSuSE——简洁、尾长、绿色。
+順便安利一下，我最喜歡的作業系統OpenSuSE——簡潔、尾長、綠色。
 
 ![opensuse.jpg](http://toolbox.phodal.com/images/graphics/opensuse.jpg)
 
-OpenSuSE在KDE桌面下效果最赞了——因为KDE和OpenSuSE都是德国制造。总的来说，会比Debian系的Debian和Ubunt，及RetHat系的CentOS及Fedora稳定、漂亮。
+OpenSuSE在KDE桌面下效果最讚了——因為KDE和OpenSuSE都是德國製造。總的來說，會比Debian系的Debian和Ubunt，及RetHat系的CentOS及Fedora穩定、漂亮。
 
-令人遗憾的是这三个工具，我都用不了。Mac对X Windows的支持不是一般的差，于是我就需要别的替代工具。
+令人遺憾的是這三個工具，我都用不了。Mac對X Windows的支援不是一般的差，於是我就需要別的替代工具。
 
-## 在线流程图：Processon
+## 線上流程圖：Processon
 
-这个工具还是相当好用，至少是在GxFxW内比较快——我之前使用过Creately、draw.io、Gliffy等等的一些工具，只是随着版图的扩展，很多地区都已经“xx”了。
+這個工具還是相當好用，至少是在GxFxW內比較快——我之前使用過Creately、draw.io、Gliffy等等的一些工具，只是隨著版圖的擴充套件，很多地區都已經“xx”了。
 
 ![tlok.jpg](http://toolbox.phodal.com/images/graphics/tlok.jpg)
 
-不过遗憾的是：他们没有给我广告费。
+不過遺憾的是：他們沒有給我廣告費。
 
-> ProcessOn是一个在线协作绘图平台，为用户提供最强大、易用的作图工具！支持在线创作流程图、BPMN、UML图、UI界面原型设计、iOS界面原型设计等。
+> ProcessOn是一個線上協作繪圖平臺，為使用者提供最強大、易用的作圖工具！支援線上創作流程圖、BPMN、UML圖、UI介面原型設計、iOS介面原型設計等。
 
-同样的，在我的那个“Developer进阶书单”（GitHub: [https://github.com/phodal/booktree](https://github.com/phodal/booktree))中，就是用这个工具画出规规矩矩的线。
+同樣的，在我的那個“Developer進階書單”（GitHub: [https://github.com/phodal/booktree](https://github.com/phodal/booktree))中，就是用這個工具畫出規規矩矩的線。
 
 ![BookTree.png](http://toolbox.phodal.com/images/graphics/BookTree.png)
 
-并且，它还是跨平台的。
+並且，它還是跨平臺的。
 
-## 各种图： Word和Excel
+## 各種圖： Word和Excel
 
-由于翻译和写书的需要，我成了一个Office 365订阅用户。于是发现在Word等一系列的Office工具中，自带了一个SmartArt的工具：
+由於翻譯和寫書的需要，我成了一個Office 365訂閱使用者。於是發現在Word等一系列的Office工具中，自帶了一個SmartArt的工具：
 
 ![smart-art.png](http://toolbox.phodal.com/images/graphics/smart-art.png)
 
-可以画出很多很有意思的图形，比如：
+可以畫出很多很有意思的圖形，比如：
 
-![编程之路.png](http://toolbox.phodal.com/images/graphics/program_road.png)
+![程式設計之路.png](http://toolbox.phodal.com/images/graphics/program_road.png)
 
 又或者是：
 
 ![growth-lob.jpg](http://toolbox.phodal.com/images/graphics/growth-lob.jpg)
 
-分分钟就能画一个的节奏。
+分分鐘就能畫一個的節奏。
 
-## 脑图： XMind
+## 腦圖： XMind
 
-我想这个一般人都是知道的。
+我想這個一般人都是知道的。
 
-> XMind思维导图软件被著名互联网媒体Lifehacker评选为“最佳头脑风暴和思维导图工具”及”最受欢迎的思维导图软件”。
+> XMind思維導圖軟體被著名網際網路媒體Lifehacker評選為“最佳頭腦風暴和思維導圖工具”及”最受歡迎的思維導圖軟體”。
 
-它有一个很大的优点是使用了全球最先进的Eclipse RCP 软件架构，支持跨平台使用。它有一个很大的缺点是使用了全球最先进的Eclipse RCP 软件架构，导致了有点卡。
+它有一個很大的優點是使用了全球最先進的Eclipse RCP 軟體架構，支援跨平臺使用。它有一個很大的缺點是使用了全球最先進的Eclipse RCP 軟體架構，導致了有點卡。
 
-相比于流程图什么的，它只适合做脑图。
+相比於流程圖什麼的，它只適合做腦圖。
 
 ![banner_index.png](http://toolbox.phodal.com/images/graphics/banner_index.png)
 
-如果你还在使用Eclipse，那么你应该试试Intellij IDEA了。
+如果你還在使用Eclipse，那麼你應該試試Intellij IDEA了。
 
-## 各种图：D3.js
+## 各種圖：D3.js
 
-> D3.js（D3或Data-Driven Documents）是一个用动态图形显示数据的JavaScript库，一个数据可视化的工具。
+> D3.js（D3或Data-Driven Documents）是一個用動態圖形顯示資料的JavaScript庫，一個資料視覺化的工具。
 
-与上面的工具相比，这个工具可能没有那么方便。但是，作为一个数据可视化工具，它不仅仅可以做出各种炫酷的图形。
+與上面的工具相比，這個工具可能沒有那麼方便。但是，作為一個資料視覺化工具，它不僅僅可以做出各種炫酷的圖形。
 
-还可以做出一个技能树：
+還可以做出一個技能樹：
 
 ![sherlock.png](http://toolbox.phodal.com/images/graphics/sherlock.png)
 
-这个项目的GitHub见：[https://github.com/phodal/sherlock](https://github.com/phodal/sherlock)
+這個項目的GitHub見：[https://github.com/phodal/sherlock](https://github.com/phodal/sherlock)
 
-## 地图：Leaflet
+## 地圖：Leaflet
 
-> Leaflet 是一个为建设移动设备友好的互动地图，而开发的现代的、开源的JavaScript 库。
+> Leaflet 是一個為建設移動裝置友好的互動地圖，而開發的現代的、開源的JavaScript 庫。
 
-虽然它与上面的图形没有啥关系，但是它带了一个图字啊。与Google Map原生的API，或者OpenStreet相比，它最大的优点是对移动设备支持好。
+雖然它與上面的圖形沒有啥關係，但是它帶了一個圖字啊。與Google Map原生的API，或者OpenStreet相比，它最大的優點是對移動裝置支援好。
 
-并且，它也是一个可以根据数据（GEOJSON，地理数据）生成图形的工具。
+並且，它也是一個可以根據資料（GEOJSON，地理資料）生成圖形的工具。
 
 ![vmap.jpg](http://toolbox.phodal.com/images/graphics/vmap.jpg)
 
-Chrome插件篇
+Chrome外掛篇
 ===
 
 Chrome DevTools
 ---
 
-在我所用过的这些前端工具里，最常用、实用的就属Chrome自带的DevTools。通常情况下，我们只需要使用这个工具就可以完成大部分的工作了。
+在我所用過的這些前端工具裡，最常用、實用的就屬Chrome自帶的DevTools。通常情況下，我們只需要使用這個工具就可以完成大部分的工作了。
 
 ![Chrome DevTools](http://toolbox.phodal.com/images/fe-plugins/dev-tool.jpg)
 
-每个前端工程师，都应该好好学习如何去使用Chrome DevTools。当然，这并不是一篇详细的关于Chrome DevTools的介绍——相关的内容足够写一本书了。除了正常的Debug功能，它可以模拟移动设备，模拟网络、模板分辨率、模拟，并在HTTP请求中带上相应的User Agent方便我们调试。
+每個前端工程師，都應該好好學習如何去使用Chrome DevTools。當然，這並不是一篇詳細的關於Chrome DevTools的介紹——相關的內容足夠寫一本書了。除了正常的Debug功能，它可以模擬移動裝置，模擬網路、模板解析度、模擬，並在HTTP請求中帶上相應的User Agent方便我們偵錯。
 
 Open SEO Stats
 ---
 
-顾名思义这是一个SEO状态查询工具，它可以让我们查看网站的SEO相关信息。也是一个非常棒的反诈骗软件，因为一个好的网站的Alexa Traffic Rank、PR以及Pages indexed（索引数）等等都会相对较高。
+顧名思義這是一個SEO狀態查詢工具，它可以讓我們檢視網站的SEO相關資訊。也是一個非常棒的反詐騙軟體，因為一個好的網站的Alexa Traffic Rank、PR以及Pages indexed（索引數）等等都會相對較高。
 
 ![Open SEO Stats](http://toolbox.phodal.com/images/fe-plugins/seo-stats.jpg)
 
-除了基本的SEO状态显示，它还提供了一些有效的工具，来帮助我们优化页面的SEO。如在Page Info里，会罗列出页面的相关标签是否完整。在Links Stats里，会帮我们检查页面的外链情况等等。
+除了基本的SEO狀態顯示，它還提供了一些有效的工具，來幫助我們優化頁面的SEO。如在Page Info裡，會羅列出頁面的相關標籤是否完整。在Links Stats裡，會幫我們檢查頁面的外鏈情況等等。
 
 PageSpeed Insights
 ---
 
-这是Google的PageSpeed Insights的插件版（网页版见： [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)），一个非常棒的网页优化工具，有了它就可以让我们轻松对网页进行优化。我们所需要做的事情就是点击“分析”按钮，然后就坐等他分析完成。
+這是Google的PageSpeed Insights的外掛版（網頁版見： [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)），一個非常棒的網頁優化工具，有了它就可以讓我們輕鬆對網頁進行優化。我們所需要做的事情就是點選“分析”按鈕，然後就坐等他分析完成。
 
-如下就是我博客的一个分析结果：
+如下就是我部落格的一個分析結果：
 
 ![PageSpeed Insights](http://toolbox.phodal.com/images/fe-plugins/pagespeed.jpg)
 
-总体分数98分，看来我针对这个所说的东西进行优化的效果还不错。左边显示了我博客存在的一些问题，如：
+總體分數98分，看來我針對這個所說的東西進行優化的效果還不錯。左邊顯示了我部落格存在的一些問題，如：
 
- - 没有压缩CSS
- - 可以使用浏览器缓存
- - 需要指定缓存验证工具
- - 暂缓JavaScript解析
- - 将查询字符从静态资源中删除
+ - 沒有壓縮CSS
+ - 可以使用瀏覽器快取
+ - 需要指定快取驗證工具
+ - 暫緩JavaScript解析
+ - 將查詢字元從靜態資源中刪除
 
-等等的几个问题——这些已经都是小问题了。所以他们的重要等级是“低”，一般来说如果有一个等级是“高”整个评分就会特别低。
+等等的幾個問題——這些已經都是小問題了。所以他們的重要等級是“低”，一般來說如果有一個等級是“高”整個評分就會特別低。
 
-除此，我们还可以使用命令行工具来对你的网页进行测试。
+除此，我們還可以使用命令列工具來對你的網頁進行測試。
 
 [https://github.com/addyosmani/psi](https://github.com/addyosmani/psi)
 
-安装：
+安裝：
 
 ``` shell
 $ npm install --global psi
 ```
 
-只需要执行下面的命令即可：
+只需要執行下面的命令即可：
 
 ``` shell
 psi http://www.example.com/
 ```
 
-如我的博客的结果:
+如我的部落格的結果:
 
 ``` shell
 --------------------------------------------------------
@@ -326,86 +326,86 @@ Leverage browser caching                   | 1.5
 Main resource server response time         | %
 ```
 
-再依据不同的结果对网页进化优化，不过它有一个前提是它并不适合SPA（单页面）应用。
+再依據不同的結果對網頁進化優化，不過它有一個前提是它並不適合SPA（單頁面）應用。
 
 Postman
 ---
 
-我相信这个软件，搞过Web开发的人都听过。
+我相信這個軟體，搞過Web開發的人都聽過。
 
 ![Chrome Postman](http://toolbox.phodal.com/images/fe-plugins/postman.jpg)
 
-它是一款功能强大的网页调试与发送网页HTTP请求的Chrome插件。总之，就是我们可以在浏览器上执行GET、POST等等的测试。在调试远程API的时候很有用，一般在调试本地API的时候，我都是用jQuery的。
+它是一款功能強大的網頁偵錯與傳送網頁HTTP請求的Chrome外掛。總之，就是我們可以在瀏覽器上執行GET、POST等等的測試。在偵錯遠端API的時候很有用，一般在偵錯本地API的時候，我都是用jQuery的。
 
-同样的，你仍然可以使用命令行工具来测试它，即[Newman](https://github.com/postmanlabs/newman)。由于其没有UI，它可以运行在CI上，并编写相应的UI测试。
+同樣的，你仍然可以使用命令列工具來測試它，即[Newman](https://github.com/postmanlabs/newman)。由於其沒有UI，它可以執行在CI上，並編寫相應的UI測試。
 
 XPath Helper
 ---
 
-这是我在写UI自动化测试的时候使用的工具，由于那是一个遗留项目，所以我们都对整体UI的布局都不是特别熟悉。并且由于业务推进的关系，我们并没有足够的时候去解决这个问题，于是就开始使用这个工具来完成工作了。
+這是我在寫UI自動化測試的時候使用的工具，由於那是一個遺留項目，所以我們都對整體UI的佈局都不是特別熟悉。並且由於業務推進的關係，我們並沒有足夠的時候去解決這個問題，於是就開始使用這個工具來完成工作了。
 
-在编写的时候我们会在Console用jQuery去选定元素，然后再将其转换为XPath。接着在这个工具上尝试，如下图显示：
+在編寫的時候我們會在Console用jQuery去選定元素，然後再將其轉換為XPath。接著在這個工具上嘗試，如下圖顯示：
 
 ![XPath Helper](http://toolbox.phodal.com/images/fe-plugins/xpath.jpg)
 
-最后，我们将会写到代码中。
+最後，我們將會寫到程式碼中。
 
 ObservePoint Tag Debugger
 ---
 
-这是一个可以用于调试各种Web分析工具的插件，它可以用于分析SiteCat、Google Analytics、WebTrend等发出的事件请求，并解析其数据。
+這是一個可以用於偵錯各種Web分析工具的外掛，它可以用於分析SiteCat、Google Analytics、WebTrend等發出的事件請求，並解析其資料。
 
 ![ObservePoint Tag Debugger](http://toolbox.phodal.com/images/fe-plugins/observerPoint.jpg)
 
 Capture Webpage Screenshot Entirely
 ---
 
-这是一个截图工具，可以用于截取页面长图。
+這是一個截圖工具，可以用於擷取頁面長圖。
 
-外设篇
+外設篇
 ===
 
-机械键盘
+機械鍵盤
 ---
 
-地球人都知道，我就不说了。
+地球人都知道，我就不說了。
 
-如果你问我用的是什么键盘：
+如果你問我用的是什麼鍵盤：
 
- - Ducky 9008s2，大学的时候买的，家里用，紫色
+ - Ducky 9008s2，大學的時候買的，家裡用，紫色
  - Ducky DK2087 G2，只要399，公司用的
 
-机械键盘手托
+機械鍵盤手託
 ---
 
-很多人光有个机械键盘，但是却没有一个与之对应的手托，我觉得还是有些可惜的。机械键盘都有着相当高的高度，这时手放上去就有些尴尬。
+很多人光有個機械鍵盤，但是卻沒有一個與之對應的手託，我覺得還是有些可惜的。機械鍵盤都有著相當高的高度，這時手放上去就有些尷尬。
 
-![机械键盘手托](http://toolbox.phodal.com/images/devices/shoutuo.jpeg)
+![機械鍵盤手託](http://toolbox.phodal.com/images/devices/shoutuo.jpeg)
 
 
-自定义按钮的鼠标
+自定義按鈕的滑鼠
 ---
 
-对于程序员来说，复制和粘贴是很常用的操作，如果我们有一个对应的自定义按钮的鼠标的话，我们就可以光用鼠标来进行复制和粘贴了。
+對於程式設計師來說，複製和貼上是很常用的操作，如果我們有一個對應的自定義按鈕的滑鼠的話，我們就可以光用滑鼠來進行復制和貼上了。
 
 ![Steelseries](http://toolbox.phodal.com/images/devices/steelseries.jpg)
 
-鼠标线夹
+滑鼠線夾
 ---
 
-我经常拿我的Macbook去玩《文明》系列的游戏，这时候我就需要鼠标了，也需要用鼠标线夹来保证我的移动不会受阻。
+我經常拿我的Macbook去玩《文明》系列的遊戲，這時候我就需要滑鼠了，也需要用滑鼠線夾來保證我的移動不會受阻。
 
-笔记本支架折叠
+筆記本支架摺疊
 ---
 
-如果选不了一个好的椅子，那么我们就需要一个好的支架来撑起电脑到一个合适的高度。
+如果選不了一個好的椅子，那麼我們就需要一個好的支架來撐起電腦到一個合適的高度。
 
 ![Steelseries](http://toolbox.phodal.com/images/devices/nexstand.jpg)
 
 Kindle
 ---
 
-Kindle，看书的人都知道。
+Kindle，看書的人都知道。
 
 Ops
 ======
@@ -413,22 +413,22 @@ Ops
 Nginx Pagespeed
 ---
 
-> ngx_pagespeed 是 Nginx 的一个扩展模块，主要的功能是针对前端页面而进行服务器端的优化，对前端设计人员来说，可以省去优化css、js以及图片的过程。ngx_pagespeed对nginx自身负载能力的提升基本是看不到的，甚至会因为进行服务器端的优化而使系统增加负载；但从减少客户请求数的角度去看，牺牲部分服务器性能还是值得的
+> ngx_pagespeed 是 Nginx 的一個擴充套件模組，主要的功能是針對前端頁面而進行伺服器端的優化，對前端設計人員來說，可以省去優化css、js以及圖片的過程。ngx_pagespeed對nginx自身負載能力的提升基本是看不到的，甚至會因為進行伺服器端的優化而使系統增加負載；但從減少客戶請求數的角度去看，犧牲部分伺服器效能還是值得的
 
 主要功能如下：
 
- - 图像优化：剥离元数据、动态调整，重新压缩
- - CSS和JavaScript压缩、合并、级联、内联
- - 小资源内联
- - 推迟图像和JavaScript加载
- - 对HTML重写、压缩空格、去除注释等
- - 提升缓存周期
+ - 影象優化：剝離後設資料、動態調整，重新壓縮
+ - CSS和JavaScript壓縮、合併、級聯、內聯
+ - 小資源內聯
+ - 推遲影象和JavaScript載入
+ - 對HTML重寫、壓縮空格、去除註釋等
+ - 提升快取週期
  - 以及其他config_filters
 
 Boom
 ---
 
-Boom是一个用Go语言实现的压力测试工具，就是和Apache Bench类似的工具。它提供了一个很有意思的UI，这就是我为什么推荐他的原因了：
+Boom是一個用Go語言實現的壓力測試工具，就是和Apache Bench類似的工具。它提供了一個很有意思的UI，這就是我為什麼推薦他的原因了：
 
 ```
 1000 / 1000 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00 %
@@ -466,21 +466,21 @@ Latency distribution:
   90% in 0.2011 secs.
   95% in 0.2024 secs.
   99% in 0.2038 secs.
-```  
+```
 
 GoAccess
 ---
 
-> GoAccess是一款开源、实时，运行在命令行终端下的web日志分析工具。该工具提供快速、多样的HTTP状态统计，可以令管理员不再纠结于统计各类数据，和繁杂的指令以及一大堆管道/正则表达式说byebye。
+> GoAccess是一款開源、實時，執行在命令列終端下的web日誌分析工具。該工具提供快速、多樣的HTTP狀態統計，可以令管理員不再糾結於統計各類資料，和繁雜的指令以及一大堆管道/正規表示式說byebye。
 
-这生成的风格是这样的：
+這生成的風格是這樣的：
 
 ![GoAccess](http://toolbox.phodal.com/images/ops/goaccess-dashboard.png)
 
 
-它可以轻松统计出访问概况、动态页面请求、静态页面请求（如图片、样式表、脚本等）、访客排名，访客使用的操作系统，访客使用的浏览器，来路域名，404 错误，搜索爬虫，搜索关键词等等。
+它可以輕鬆統計出訪問概況、動態頁面請求、靜態頁面請求（如圖片、樣式表、指令碼等）、訪客排名，訪客使用的作業系統，訪客使用的瀏覽器，來路域名，404 錯誤，搜尋爬蟲，搜尋關鍵詞等等。
 
-而，我们所要做的只需要运行：
+而，我們所要做的只需要執行：
 
 ```shell
 goaccess -f access.log
@@ -489,61 +489,61 @@ goaccess -f access.log
 Fabric
 ---
 
-因为我的博客是基于Django框架而开发的，我偏向于使用Python作为开发语言，所以我需要选择了Fabric作为运维工具。
+因為我的部落格是基於Django框架而開發的，我偏向於使用Python作為開發語言，所以我需要選擇了Fabric作為運維工具。
 
 
-> Fabric 是一个 Python (2.5-2.7) 库和命令行工具，用来流水线化执行 SSH以部署应用或系统管理任务。
+> Fabric 是一個 Python (2.5-2.7) 庫和命令列工具，用來流水線化執行 SSH以部署應用或系統管理任務。
 
-更具体地说，Fabric 是：
+更具體地說，Fabric 是：
 
- - 一个让你通过 命令行 执行 任意 Python 函数 的工具；
- - 一个让通过 SSH 执行 Shell 命令更加 容易 和 蟒样 的子程序库（建立于一个更低层次的库）。
+ - 一個讓你通過 命令列 執行 任意 Python 函數 的工具；
+ - 一個讓通過 SSH 執行 Shell 命令更加 容易 和 蟒樣 的子程式庫（建立於一個更低層次的庫）。
 
 Docker
 ---
 
-> Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。
+> Docker是一個開源的引擎，可以輕鬆的為任何應用建立一個輕量級的、可移植的、自給自足的容器。
 
 Jenkins
 ---
 
-> Jenkins是一个用Java编写的开源的持续集成工具。Jenkins提供了软件开发的持续集成服务。它运行在Servlet容器中（例如Apache Tomcat）。它支持软件配置管理（SCM）工具，可以执行基于Apache Ant和Apache Maven的项目，以及任意的Shell脚本和Windows批处理命令。
+> Jenkins是一個用Java編寫的開源的持續整合工具。Jenkins提供了軟體開發的持續整合服務。它執行在Servlet容器中（例如Apache Tomcat）。它支援軟體配置管理（SCM）工具，可以執行基於Apache Ant和Apache Maven的項目，以及任意的Shell指令碼和Windows批處理命令。
 
-除了将Jenkins有于持续集成环境外，我们还可以使用Jenkins来完成一些自动化的部署工作。
+除了將Jenkins有於持續整合環境外，我們還可以使用Jenkins來完成一些自動化的部署工作。
 
 
-自动化
+自動化
 ===
 
 Selenium
 ---
 
-> Selenium 是一个用于 Web 应用程序测试的工具。Selenium 的测试用例直接运行在浏览器中，就像真正的用户在操作一样。与主流的 web 自动化测试框架还有 QTP，基于 Ruby 的 WATIR 等相比，Selenium 支持 IE、Mozilla Firefox 多种浏览器，支持自动录制脚本以及 Java、c#、ruby 等多种运行语言的自动生成，用例制作快捷，运行快速。相比起来 Selenium 要显得更为灵活实用。
+> Selenium 是一個用於 Web 應用程式測試的工具。Selenium 的測試用例直接執行在瀏覽器中，就像真正的使用者在操作一樣。與主流的 web 自動化測試框架還有 QTP，基於 Ruby 的 WATIR 等相比，Selenium 支援 IE、Mozilla Firefox 多種瀏覽器，支援自動錄製指令碼以及 Java、c#、ruby 等多種執行語言的自動生成，用例製作快捷，執行快速。相比起來 Selenium 要顯得更為靈活實用。
 
-硬件篇
+硬體篇
 ===
 
 Raspberry Pi
 ---
 
-> Raspberry Pi 是一款基于Linux的单板机电脑。它由英国的树莓派基金会所开发，目的是以低价硬件及自由软件促进学校的基本计算机科学教育。
+> Raspberry Pi 是一款基於Linux的單板機電腦。它由英國的樹莓派基金會所開發，目的是以低價硬體及自由軟體促進學校的基本電腦科學教育。
 
 Arduino
 ---
 
-> Arduino，是一个开放源代码的单芯片微控制器，它使用了Atmel AVR单片机，采用了开放源代码的软硬件平台，建构于简易输出/输入（simple I/O）界面板，并且具有使用类似Java、C语言的Processing/Wiring开发环境。
+> Arduino，是一個開放原始碼的單晶片微控制器，它使用了Atmel AVR微控制器，採用了開放原始碼的軟硬體平臺，建構於簡易輸出/輸入（simple I/O）介面板，並且具有使用類似Java、C語言的Processing/Wiring開發環境。
 
-我拥有下面的一些开发板：
+我擁有下面的一些開發板：
 
- - Arduino Uno，玩过都知道。通用版，可以使用一系列强大的扩展板。
- - Arduino Yun，带WiFi功能的Arduino。
- - Arduino ADK，可以使不支持USB Host功能的Android设备也可以和其它USB设备
- - Arduino Lilypad，主要用于可穿戴领域。
+ - Arduino Uno，玩過都知道。通用版，可以使用一系列強大的擴充套件板。
+ - Arduino Yun，帶WiFi功能的Arduino。
+ - Arduino ADK，可以使不支援USB Host功能的Android裝置也可以和其它USB裝置
+ - Arduino Lilypad，主要用於可穿戴領域。
 
 NodeMCU
 ---
 
-> NodeMCU,是一个开源的物联网平台。 它使用Lua脚本语言编程。该平台基于eLua 开源项目,底层使用ESP8266 sdk 0.9.5版本。该平台使用了很多开源项目, 例如 lua-cjson, spiffs[5]. NodeMCU包含了可以运行在 esp8266 Wi-Fi SoC芯片之上的固件,以及基于ESP-12模组的硬件。
+> NodeMCU,是一個開源的物聯網平臺。 它使用Lua指令碼語言程式設計。該平臺基於eLua 開源項目,底層使用ESP8266 sdk 0.9.5版本。該平臺使用了很多開源項目, 例如 lua-cjson, spiffs[5]. NodeMCU包含了可以執行在 esp8266 Wi-Fi SoC晶片之上的固件,以及基於ESP-12模組的硬體。
 
 
 
@@ -553,16 +553,16 @@ API
 Moco
 ---
 
-> Moco是一个简单搭建模拟服务器的程序库/工具，它是一个简单搭建 stub 的框架，主要用于测试和集成。
+> Moco是一個簡單搭建模擬伺服器的程式庫/工具，它是一個簡單搭建 stub 的框架，主要用於測試和整合。
 
-这个工具的目的主要是针对于前后端分离的Web应用来说，特别是基于HTTP协议的集成——Web Service、REST等。
+這個工具的目的主要是針對於前後端分離的Web應用來說，特別是基於HTTP協議的整合——Web Service、REST等。
 
-不过如果你们不写测试的话，这个工具就没啥用。
+不過如果你們不寫測試的話，這個工具就沒啥用。
 
 Swagger
 ---
 
-> Swagger是一种和语言无关的规范和框架，用于定义服务接口，主要用于描述RESTful的API。它专注于为API创建优秀的文档和客户端库。支持Swagger的API可以为API方法生成交互式的文档，让用户可以通过以可视化的方式试验，查看请求和响应、头文件和返回代码，从而发现API的功能。它本身就非常强大，但是Swagger框架还支持为多种流行的语言——包括JavaScript、Python、Ruby、Java、Scala等等——生成客户端代码。
+> Swagger是一種和語言無關的規範和框架，用於定義服務介面，主要用於描述RESTful的API。它專注於為API建立優秀的文件和客戶端庫。支援Swagger的API可以為API方法生成互動式的文件，讓使用者可以通過以視覺化的方式試驗，檢視請求和響應、標頭檔案和返回程式碼，從而發現API的功能。它本身就非常強大，但是Swagger框架還支援為多種流行的語言——包括JavaScript、Python、Ruby、Java、Scala等等——生成客戶端程式碼。
 
 CLI
 ===
@@ -570,9 +570,9 @@ CLI
 tree
 ---
 
-> tree命令可以以树形结构显示文件目录结构，它非常适合于我们给别人介绍我们的文件目录的组成框架，同时该命令使用适当的参数也可以将命令结果输出到文本文件中。
+> tree命令可以以樹形結構顯示檔案目錄結構，它非常適合於我們給別人介紹我們的檔案目錄的組成框架，同時該命令使用適當的參數也可以將命令結果輸出到文字檔案中。
 
-这个命令非常适用于我们写作的时候用的，如下就是toolbox下的chapters目录：
+這個命令非常適用於我們寫作的時候用的，如下就是toolbox下的chapters目錄：
 
 ```shell
 chapters
@@ -592,16 +592,16 @@ chapters
 sl
 ---
 
-这是一个神奇的命令行工具，由于两个手的手速不致，我经常将ls敲成sl。而在Ubuntu上则会提示你，你是不是要安装sl，于是我就安装了。然后：
+這是一個神奇的命令列工具，由於兩個手的手速不致，我經常將ls敲成sl。而在Ubuntu上則會提示你，你是不是要安裝sl，於是我就安裝了。然後：
 
 ![SL](http://toolbox.phodal.com/images/cli/sl-tool.jpg)
 
-每次我敲错命令的时候，都会有这个神奇的火车头出现，火车头动的期间就只能等它完成。每次这个时候，就说明我们需要休息。
+每次我敲錯命令的時候，都會有這個神奇的火車頭出現，火車頭動的期間就只能等它完成。每次這個時候，就說明我們需要休息。
 
 cURL
 ---
 
-cURL利用URL语法在命令行方式下工作的开源文件传输工具。它是一个很常用的命令，也可以支持文件上传和下载。
+cURL利用URL語法在命令列方式下工作的開原始檔傳輸工具。它是一個很常用的命令，也可以支援檔案上傳和下載。
 
 ``` shell
 curl -I -s -A 'Googlebot' www.phodal.com
@@ -628,64 +628,64 @@ Backend
 Spring MVC
 ---
 
-> Spring Web MVC是一种基于Java的实现了Web MVC设计模式的请求驱动类型的轻量级Web框架。
+> Spring Web MVC是一種基於Java的實現了Web MVC設計模式的請求驅動類型的輕量級Web框架。
 
 Spring Boot
 ---
 
-> Spring Boot 的目的在于快速创建可以独立运行的 Spring 应用。通过 Spring Boot 可以根据相应的模板快速创建应用并运行。Spring Boot 可以自动配置 Spring 的各种组件，并不依赖代码生成和 XML 配置文件。Spring Boot 可以大大提升使用 Spring 框架时的开发效率。
+> Spring Boot 的目的在於快速建立可以獨立執行的 Spring 應用。通過 Spring Boot 可以根據相應的模板快速建立應用並執行。Spring Boot 可以自動配置 Spring 的各種元件，並不依賴程式碼生成和 XML 配置檔案。Spring Boot 可以大大提升使用 Spring 框架時的開發效率。
 
 Laravel
 ---
 
-> Laravel是一套简洁、优雅的PHP Web开发框架。
+> Laravel是一套簡潔、優雅的PHP Web開發框架。
 
 Django
 ---
 
-> Django是一个开放源代码的Web应用框架，由Python写成。采用了MVC的软件设计模式，即模型M，视图V和控制器C。
+> Django是一個開放原始碼的Web應用框架，由Python寫成。採用了MVC的軟體設計模式，即模型M，檢視V和控制器C。
 
-在我的博客，以及我使用的一些需要用户认证、CMS功能等等的系统里，我优先使用这个框架来完成任务。它还拥有一套设计得很不错的ORM系统，并且其还隔离了不同的系统底层。
+在我的部落格，以及我使用的一些需要使用者認證、CMS功能等等的系統裡，我優先使用這個框架來完成任務。它還擁有一套設計得很不錯的ORM系統，並且其還隔離了不同的系統底層。
 
 Flask
 ---
 
-> Flask是使用Python语言编写的轻量级的WebWeb应用框架。基于Werkzeug WSGI工具箱和Jinja2 模板引擎。
+> Flask是使用Python語言編寫的輕量級的WebWeb應用框架。基於Werkzeug WSGI工具箱和Jinja2 模板引擎。
 
-与Django的很大不同之处在于Flask被称之为微框架，它只有简单的核心，而其他的功能需要使用扩展来完成。这就意味着，当我们可以高度定制我们的系统，只选择我们需要的功能，并通过扩展来完成。
+與Django的很大不同之處在於Flask被稱之為微框架，它只有簡單的核心，而其他的功能需要使用擴充套件來完成。這就意味著，當我們可以高度定製我們的系統，只選擇我們需要的功能，並通過擴充套件來完成。
 
 Express
 ---
 
-> Express 是一个基于Node.js 平台的极简、灵活的web 应用开发框架，它提供一系列强大的特性，帮助你创建各种Web 和移动设备应用。
+> Express 是一個基於Node.js 平臺的極簡、靈活的web 應用開發框架，它提供一系列強大的特性，幫助你建立各種Web 和移動裝置應用。
 
 WordPress
 ---
 
-> WordPress是一个以PHP和MySQL为平台的自由开源的博客软件和内容管理系统。WordPress具有插件架构和模板系统。Alexa排行前100万的网站中有超过16.7%的网站使用WordPress。到了2011年8月，约22%的新网站采用了WordPress。WordPress是目前因特网上最流行的博客系统。
+> WordPress是一個以PHP和MySQL為平臺的自由開源的部落格軟體和內容管理系統。WordPress具有外掛架構和模板系統。Alexa排行前100萬的網站中有超過16.7%的網站使用WordPress。到了2011年8月，約22%的新網站採用了WordPress。WordPress是目前因特網上最流行的部落格系統。
 
 Ruby On Rails
 ---
 
-> 是一个使用Ruby语言写的开源Web应用框架，它是严格按照MVC结构开发的。它努力使自身保持简单，来使实际的应用开发时的代码更少，使用最少的配置。
+> 是一個使用Ruby語言寫的開源Web應用框架，它是嚴格按照MVC結構開發的。它努力使自身保持簡單，來使實際的應用開發時的程式碼更少，使用最少的配置。
 
 
-科学
+科學
 ===
 
 Octave
 ---
 
-> Octave是一个旨在提供与Matlab语法兼容的开放源代码科学计算及数值分析的工具；
+> Octave是一個旨在提供與Matlab語法相容的開放原始碼科學計算及數值分析的工具；
 
 Numpy
 ---
 
-> NumPy是Python语言的一个扩充程序库。支持高级大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。NumPy的前身Numeric最早是由Jim Hugunin与其它协作者共同开发，2005年，Travis Oliphant在Numeric中结合了另一个同性质的程序库Numarray的特色，并加入了其它扩展而开发了NumPy。NumPy为开放源代码并且由许多协作者共同维护开发。
+> NumPy是Python語言的一個擴充程式庫。支援高階大量的維度陣列與矩陣運算，此外也針對陣列運算提供大量的數學函數庫。NumPy的前身Numeric最早是由Jim Hugunin與其它協作者共同開發，2005年，Travis Oliphant在Numeric中結合了另一個同性質的程式庫Numarray的特色，並加入了其它擴充套件而開發了NumPy。NumPy為開放原始碼並且由許多協作者共同維護開發。
 
 Processing
 ---
 
-> Processing是一种开源编程语言，专门为电子艺术和视觉交互设计而创建，其目的是通过可视化的方式辅助编程教学，并在此基础之上表达数字创意。
+> Processing是一種開源程式語言，專門為電子藝術和視覺互動設計而建立，其目的是通過視覺化的方式輔助程式設計教學，並在此基礎之上表達數字創意。
 
-它除了制作一些酷炫的动画之外，其简单的GUI编程，还可以用于硬件端的上位机编写。
+它除了製作一些酷炫的動畫之外，其簡單的GUI程式設計，還可以用於硬體端的上位機編寫。
